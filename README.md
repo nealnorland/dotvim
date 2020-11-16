@@ -32,7 +32,9 @@ _Note -- If you have old vim configuration files, please create a backup of thes
 5. Fetch and check out the submodule project(s) with the appropriate commit as identified in this repository:
 
         git submodule update
-        
+
 ## Plugins Reference
 ---
 * [Pathogen](https://github.com/tpope/vim-pathogen): A Vim runtimepath manager that easily allows you to install plugins and runtime files
+
+* [SnipMate](https://github.com/garbas/vim-snipmate): A Vim script that provides support for some textual snippets
