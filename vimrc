@@ -6,10 +6,25 @@
 " Inspired by the following sources:
 " https://github.com/dougblack/dotfiles
 " http://vimcasts.org
-" [A] https://github.com/colbycheeze/dotfiles
+" [A] https://github.com/axiaoxin/vim-settings
+" [B] https://github.com/colbycheeze/dotfiles
 " https://github.com/bryankennedy/vimrc
 "
 " And many others...
+
+""""""""""""""""""
+" Pathogen - manage your runtimepath
+""""""""""""""""""
+
+" Download Pathogen, inspired by [A]
+if empty(glob('~/.vim/autoload/pathogen.vim'))
+    silent !curl -fLo ~/.vim/autoload/pathogen.vim --create-dirs
+        \ https://tpo.pe/pathogen.vim
+endif
+" End of [A]
+
+execute pathogen#infect()
+execute pathogen#helptags()
 
 """""""""""""""""""
 " Colors
@@ -30,7 +45,7 @@ set expandtab			                " TAB are spaces
 set number		    	                " show line numbers
 set numberwidth=5   		            " shift line number spacing by 5
 
-" Toggle relative numbering, and set to absolute on the loss of focus or insert mode from [A]
+" Toggle relative numbering, and set to absolute on the loss of focus or insert mode from [B]
 set rnu
 function! ToggleNumbersOn()
     set nu!
@@ -44,7 +59,7 @@ autocmd FocusLost * call ToggleRelativeOn()
 autocmd FocusGained * call ToggleRelativeOn()
 autocmd InsertEnter * call ToggleRelativeOn()
 autocmd InsertLeave * call ToggleRelativeOn()
-" End of [A]
+" End of [B]
 
 set showcmd			                    " show command in the bottom bar
 set ruler                               " show ruler in the bottom bar

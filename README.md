@@ -20,3 +20,7 @@ _Note -- If you have old vim configuration files, please create a backup of thes
 2. Create a symlink for the `vimrc` file to the `$HOME` directory: 
 
         ln -s ~/.vim/vimrc ~/.vimrc
+
+## Plugins Reference
+---
+* [Pathogen](https://github.com/tpope/vim-pathogen): A Vim runtimepath manager that easily allows you to install plugins and runtime files
