@@ -72,6 +72,9 @@ set complete=.,w,b,u,t,i,kspell
 set completeopt=menu,menuone,longest    " complete options (disable preview scratch window)
 set pumheight=15    		            " limit popup menu height 
 
+" SuperTab option to cycle top to bottom
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
 """""""""""""""""""
 " Searching 
 """""""""""""""""""
