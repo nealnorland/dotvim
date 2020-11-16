@@ -39,4 +39,7 @@ _Note -- If you have old vim configuration files, please create a backup of thes
 
 * [SnipMate](https://github.com/garbas/vim-snipmate): A Vim script that provides support for some textual snippets
 
+* [Solarized](https://github.com/altercation/solarized/blob/master/vim-colors-solarized): Color Scheme
+    * _Note -- [Pathogen](https://github.com/tpope/vim-pathogen) utilizes this [Solarized mirror](https://github.com/micha/vim-colors-solarized)_
+
 * [SuperTab](https://github.com/ervandew/supertab): A Vim script that semantically autocompletes through the use of the <kbd>Tab</kbd> key

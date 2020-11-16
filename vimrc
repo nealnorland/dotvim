@@ -28,8 +28,11 @@ execute pathogen#helptags()
 
 """""""""""""""""""
 " Colors
-""""""""""""""""""
+"""""""""""""""""""
 syntax enable			                " enable syntax processing
+set background=light 		            " light solarized theme
+let g:solarized_termcolors=256
+colorscheme solarized  		            " solarized color scheme
 
 """""""""""""""""""
 " Spaces and Tabs
