@@ -21,6 +21,18 @@ _Note -- If you have old vim configuration files, please create a backup of thes
 
         ln -s ~/.vim/vimrc ~/.vimrc
 
+3. Change the directory to `.vim`:
+
+        cd ~/.vim
+
+4. Initialize your local configuration file:
+
+        git submodule init
+
+5. Fetch and check out the submodule project(s) with the appropriate commit as identified in this repository:
+
+        git submodule update
+        
 ## Plugins Reference
 ---
 * [Pathogen](https://github.com/tpope/vim-pathogen): A Vim runtimepath manager that easily allows you to install plugins and runtime files
